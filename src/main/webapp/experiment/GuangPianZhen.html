@@ -1,0 +1,491 @@
+<span class="STYLE1" id=jnkc><script>setInterval("jnkc.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt (new Date().getDay());",1000);</script> </span>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>光偏振现象的观察与研究</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="../assets/js/biz/myChats/echarts.js"></script>
+</head>
+<body class="animated fadeInRightBig">
+<div class="container" role="alert" style="font-size:20pt">
+<div style="text-align:center"><span style="font-size:35pt">提倡环保，拒绝纸质</span></div>
+<div style="text-align:center"><span style="font-size:30pt">光偏振现象的观察与研究</span></div>
+
+        <h2>一、实验仪器：</h2>
+        <p>1、(3分)该实验所用主要仪器有：
+        <select id="choice_1">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+            <br/>A、光具座、光源、偏振片、数字检流计
+            <br/>B、光具座、光源、偏振片、光电池、光屏
+            <br/>C、光具座、光源、偏振片、光电池、数字检流计、光屏、测布儒斯特角装置</p>
+    <br>
+
+        <h2>二、实验目的：</h2>
+        <p>2、(3分)不属于光偏振实验目的是：
+        <select id="choice_2">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+            <br>A、获得激光
+            <br>B、掌握产生和检验偏振光的原理和方法
+            <br>C、验证马吕斯定律
+            <br>D、学会用布儒斯特定律测量玻璃的折射率</p>
+    <br>
+
+        <h2>三、原理简述</h2>
+        <p>3、(3分)不属于光的偏振类型的是：
+        <select id="choice_3">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+            <br>A、激光
+            <br>B、部分偏振光
+            <br>C、线偏振光
+            <br>D、自然光</p>
+        <br>
+
+        <p>4、(3分)不能用于获得线偏振光的是：
+        <select id="choice_4">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+            <br>A、偏振片
+            <br>B、玻璃任意角反射
+            <br>C、晶体起偏器 </p>
+        <br>
+
+        <p>5、(3分)关于马吕斯定律 \(I_{}\)=\(I_{0}\)\(cos^2\)\(\theta\),&nbsp;不正确的是:
+        <select id="choice_5">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+    <br>A、\(\theta\)&nbsp;是两偏振片偏振化方向间的夹角
+    <br>B、本质是电场的矢量分解
+    <br>C、\(I_{0}\)&nbsp;表示入射到第一个偏振片上的光强
+    <br>D、两偏振片偏振化方向相互平行时光电流最大</p>
+        <br>
+
+        <p>6、(3分)关于布儒斯特定律 \(tan\)\(\theta\)\(_b\)=\(n_{2}/n_{1}\)，以下不正确的是：
+        <select id="choice_6">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+    <br>A、\(\theta\)\(_b\)&nbsp;指反射光起偏时的入射角
+    <br>B、\(\theta\)\(_b\)&nbsp;是垂直入射和起偏时布儒斯特盘上刻线所指的角度之差
+    <br>C、透射光是部分偏振光
+    <br>D、透射光也是线偏振光</p>
+        <br>
+
+        <p>7、(3分)自然光经过偏振片后变成：
+        <select id="choice_7">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+    <br>A、线偏振光
+    <br>B、部分偏振光
+    <br>C、自然光</p>
+        <br>
+
+        <p>8、(3分)如图，虚线表示光线垂直入射玻璃面，此时入射光线、反射光线、法线在同一位置，入射角为0°，若不改变入射光线，而使玻璃面旋转30°（图中实线位置），则法线转______，入射角为_______。
+        <select id="choice_8" >
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+    <br>A、30°，30°
+    <br>B、30°，60°
+    <br>C、60°，30°
+    <br>D、60°，60°</p>
+    <div style="width: 80%;align-content: center"><img src="assets/images/8_1.png" class="img-responsive img-thumbnail"style="max-width: 60%;"></div>
+        <br>
+
+        <p>9、(3分)两偏振片用支架安置于光具座上正交后消光，一片不动，另一片的两个面转换180°，则以下说法正确的是：
+        <select id="choice_9">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+    <br>A、一定有透射光
+    <br>B、一定没有透射光
+    <br>C、透射光一定最强
+    <br>D、以上说法都不对</p>
+        <br>
+
+        <p>10、(3分) 在两个正交的偏振片中间插入第三个偏振片，则以下说法正确的是：
+        <select id="choice_10">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+    <br>A、透射光一定消光
+    <br>B、透射光一定最强
+    <br>C、透射光介于最强和消光之间
+    <br>D、以上说法都不对</p>
+        <br>
+
+            <h2>四、实验内容及数据处理</h2>
+            <h3>1、(24分)观察光的偏振现象（从以下选项中选择正确的答案填入表中）</h3>
+            <p>A、有变化无消光，&nbsp;&nbsp;B、有变化有消光，&nbsp;&nbsp;C、无变化，&nbsp;&nbsp;D、自然光，&nbsp;&nbsp;E、部分偏振光，&nbsp;&nbsp;F、线偏振光，&nbsp;&nbsp;G、激光</p>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-condensed">
+            <tr>
+                <td rowspan="3"><div style="text-align:center">一个偏振片时</div></td>
+                <td><div style="text-align:center">旋转偏振化方向时光强的变化</div></td>
+                <td><select id="choice_11">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td><div style="text-align:center">入射到偏振片上的是何偏振光</div></td>
+                <td><select id="choice_12">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td><div style="text-align:center">透射过偏振片后是何偏振光</div></td>
+                <td><select id="choice_13">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td rowspan="3"><div style="text-align:center">两个偏振片时</div></td>
+                <td><div style="text-align:center">旋转第二个偏振片的偏振化方向时光强的变化</div></td>
+                <td><select id="choice_14">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td><div style="text-align:center">入射到第二个偏振片上的是何偏振光</div></td>
+                <td><select id="choice_15">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                </select></td>
+            </tr>
+
+            <tr>
+                <td><div style="text-align:center">透射过第二个偏振片后是何偏振光</div></td>
+                <td><select id="choice_16">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                </select></td>
+            </tr>
+            </table>
+    </div>
+
+            <h3>2、验证马吕斯定律（24分）</h3>
+            <p>最大电流：\(I_{01} = \)<input id="blank_1" width="30"></p>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-condensed">
+            <tr>
+                <td>\(\theta\)</td>
+                <td>\(cos^2\)\(\theta\)</td>
+                <td>\(I_{1}\)(第一次)</td>
+            </tr>
+
+            <tr>
+                <td>90°</td>
+                <td>0</td>
+                <td><input id="table1_1" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>80°</td>
+                <td>0.03</td>
+                <td><input id="table1_2" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>70°</td>
+                <td>0.12</td>
+                <td><input id="table1_3" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>60°</td>
+                <td>0.25</td>
+                <td><input id="table1_4" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>50°</td>
+                <td>0.41</td>
+                <td><input id="table1_5" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>40°</td>
+                <td>0.59</td>
+                <td><input id="table1_6" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>30°</td>
+                <td>0.75</td>
+                <td><input id="table1_7" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>20°</td>
+                <td>0.88</td>
+                <td><input id="table1_8" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>10°</td>
+                <td>0.97</td>
+                <td><input id="table1_9" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>0°</td>
+                <td>1</td>
+                <td><input id="table1_10" type="text"></td>
+            </tr>
+            </table>
+        </div>
+
+            <button onclick="productDataAndPicture1()" class="btn btn-primary"><span style="font-size:1.5em">生成曲线</span></button>
+            <p>绘制&nbsp;\(I_{}\)&nbsp;和&nbsp; \(cos^2\)\(\theta\)&nbsp;的关系曲线</p>
+            <div id="main1" class="body" style="width: 100%;height: 400px;"></div>
+
+            <p>曲线的斜率:\(k_{1}\)= <input id="blank_2" style="width: auto" type="text" readonly="readonly"></p>
+            <p>拟合的线性方程:<input id="blank_3" style="width: auto" type="text"  readonly="readonly"></p>
+            <p>决定系数:\(R^2 =\) <input id="blank_4" style="width: auto" type="text"  readonly="readonly"></p>
+            <br>
+
+    <p>最大电流：\(I_{02} = \)<input id="blank_5" width="30"></p>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-condensed">
+            <tr>
+                <td>\(\theta\)</td>
+                <td>\(cos^2\)\(\theta\)</td>
+                <td>\(I_{2}\)(第二次)</td>
+            </tr>
+
+            <tr>
+                <td>90°</td>
+                <td>0</td>
+                <td><input id="table2_1" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>80°</td>
+                <td>0.03</td>
+                <td><input id="table2_2" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>70°</td>
+                <td>0.12</td>
+                <td><input id="table2_3" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>60°</td>
+                <td>0.25</td>
+                <td><input id="table2_4" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>50°</td>
+                <td>0.41</td>
+                <td><input id="table2_5" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>40°</td>
+                <td>0.59</td>
+                <td><input id="table2_6" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>30°</td>
+                <td>0.75</td>
+                <td><input id="table2_7" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>20°</td>
+                <td>0.88</td>
+                <td><input id="table2_8" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>10°</td>
+                <td>0.97</td>
+                <td><input id="table2_9" type="text"></td>
+            </tr>
+
+            <tr>
+                <td>0°</td>
+                <td>1</td>
+                <td><input id="table2_10" type="text"></td>
+            </tr>
+        </table>
+    </div>
+            <button onclick="productDataAndPicture2()" class="btn btn-primary"><span style="font-size:1.5em">生成曲线</span></button>
+            <p>绘制&nbsp;\(I_{}\)&nbsp;和&nbsp; \(cos^2\)\(\theta\)&nbsp;的关系曲线</p>
+            <div id="main2" class="body" style="width: 100%;height: 400px;"></div>
+
+            <p>曲线的斜率:\(k_{2}\)= <input id="blank_6" style="width: auto" type="text" readonly="readonly"></p>
+            <p>拟合的线性方程:<input id="blank_7" style="width: auto" type="text"  readonly="readonly"></p>
+            <p>决定系数:\(R^2 =\)<input id="blank_8" style="width: auto" type="text"  readonly="readonly"></p>
+
+            <h3>3、测玻璃的折射率（22分）</h3>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-condensed">
+            <tr>
+                <td>次数</td>
+                <td>\(\theta\)\(_{b1}\)</td>
+                <td>\(\theta\)\(_{b2}\)</td>
+                <td>\(\theta\)\(_{b}\)=\(\theta\)\(_{b2}\)-\(\theta\)\(_{b1}\)</td>
+                <td>玻璃的折射率\(n_2=\)\(tan\)\(\theta\)\(_b\)</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td><input id="table3_1"></td>
+                <td><input id="table3_2"></td>
+                <td><input id="table3_7"  readonly="readonly"></td>
+                <td><input id="table3_8" readonly="readonly"></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td><input id="table3_3"></td>
+                <td><input id="table3_4"></td>
+                <td><input id="table3_9"  readonly="readonly"></td>
+                <td><input id="table3_10" readonly="readonly"></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td><input id="table3_5"></td>
+                <td><input id="table3_6"></td>
+                <td><input id="table3_11"  readonly="readonly"></td>
+                <td><input id="table3_12" readonly="readonly"></td>
+            </tr>
+
+            <tr>
+                <td>平均折射率</td>
+                <td>/</td>
+                <td>/</td>
+                <td>/</td>
+                <td><input id="blank_9" readonly="readonly"></td>
+            </tr>
+            </table>
+    </div>
+            <button class="btn btn-primary btn-lg" onclick="getData()">计算平均折射率</button>
+            <br>
+            <br>
+
+        <button onclick="submitAll()"  class="btn btn-primary btn-block btn-lg">提交</button>
+        <br>
+        <br>
+        <br>
+
+    <div id="footer-sec">
+        Copyright &copy; <a href="#">2019 & NJAUZ
+    </a>
+    </div>
+    <style>
+        input {
+            width: 80px;
+            height: 30px;
+        }
+        img{
+            height: 100%;width: 100%
+        }
+        select {
+            width: 60px;
+            height: 25px
+        }
+        *{
+            font-size: 20px;
+        }
+        td{
+            text-align: center
+        }
+    </style>
+
+
+    <script src="../assets/js/jquery-1.11.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="../assets/js/biz/GuangPianZhen.js" ></script>
+    <script src="../assets/js/ecStat.js"></script>
+    <script src="../assets/js/biz/myChats//charts8.js"></script>
+</div>
+</body>
+</html>

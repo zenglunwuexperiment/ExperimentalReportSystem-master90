@@ -1,0 +1,387 @@
+<span class="STYLE1" id=jnkc><script>setInterval("jnkc.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt (new Date().getDay());",1000);</script> </span>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>导热系数的测定</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="../assets/js/biz/myChats/echarts.js"></script>
+</head>
+<body class="animated fadeInRightBig">
+<div class="container" role="alert" style="font-size:20pt">
+    <div style="text-align:center"><span style="font-size:35pt">提倡环保，拒绝纸质</span></div>
+    <div style="text-align:center"><span style="font-size:30pt">导热系数的测定</span></div>
+
+                <h2>一、实验仪器</h2>
+                    <p>1、(4分) 该实验所用仪器主要有：（将对应图片选项填入后面括号）测试样品和游标卡尺、WNK-100导热系数测试装置
+                        <select id="choice_1">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                        </select>、PT100温度传感器
+                        <select id="choice_2">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                        </select>（每空2分）
+                    </p>
+                    <div>
+                        A、
+                        <br>
+                        <img style="max-width: 500px; max-height: 500px;" class="img-responsive img-thumbnail" src="./assets/images/10_1.jpeg" alt="" /><br>
+                        B、
+                        <br>
+                        <img style="max-width: 500px; max-height: 500px;" class="img-responsive img-thumbnail" src="./assets/images/10_2.jpeg" alt="" /><br>
+                        C、
+                        <br>
+                        <img style="max-width: 500px; max-height: 500px;" class="img-responsive img-thumbnail" src="./assets/images/10_3.jpeg" alt="" /><br>
+                    </div>
+            <br>
+
+                <h2>二、实验目的</h2>
+                        <p>2、(4分) 不属于&ldquo;导热系数的测定&rdquo;实验目的是：
+                            <select id="choice_3">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select><br>
+                        A、学习用温差法求样品的冷却速率<br>
+                        B、学习用作图法求样品的冷却速率<br>
+                            C、学习用稳态平板法测量材料的导热系数</p>
+
+                <h2>三、原理简述</h2>
+                        <p>3、(4分) 下面哪个不属于热交换的形式：
+                            <select id="choice_4">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            </select><br>
+                            A、辐射<br>
+                            B、扩散<br>
+                            C、导热<br>
+                            D、对流</p>
+
+                        <p>4、(4分) 关于导热系数，以下正确的是
+                            <select id="choice_5">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                        </select><br>
+                        A、材料的导热系数只与材料的物质种类相关 <br>
+                        B、材料的导热系数不仅与构成材料的物质种类相关，还与它的微观结构、温度、压力及杂质含量相联系</p>
+
+                        <p>5、(4分) 热传导定律中dT/dz 、ds、dQ/dt 依次对应：
+                            <select id="choice_6">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                        </select><br>
+                        A、样品的温度梯度、样品的垂直截面积、样品的冷却速率<br>
+                        B、下铜板的温度梯度、下铜板的垂直截面积、下铜板的冷却速率<br>
+                        C、样品的温度梯度、样品的垂直截面积、样品内的传热速率<br>
+                        D、下铜板的温度梯度、下铜板的垂直截面积、下铜板的散热速率</p>
+
+                        <p>6、(4分) 稳态情况下，下面哪个选项和其他三个选项的值不一样
+                            <select id="choice_7">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                        </select><br>
+                        A、下铜板的冷却速率<br>
+                        B、样品内由高温区向低温区的传热速率<br>
+                        C、下铜板的散热速率<br>
+                        D、上铜板的加热速率</p>
+
+                        <p>7、(4分) 下面哪个操作的主要作用是测量下铜板的冷却速率
+                            <select id="choice_8">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                        </select><br>
+                        A、样品的半径和高度<br>
+                        B、下铜板的质量和尺寸<br>
+                        C、稳态时上铜板温度<br>
+                        D、自然冷却时，隔30秒测量下铜板的温度，并描绘出T-t曲线</p>
+
+                        <p>8、(4分) 散热速率的计算为何需要修正?
+                            <select id="choice_9">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                        </select><br>
+                        A、铜板的散热速率不易测量，因此需要进行修正<br>
+                        B、达到稳态后，用加热铜板直接对下铜板加热，使其温度高于稳态温度T2，因此需要进行修正<br>
+                        C、稳态传热时下铜板实际的散热面积不是全部表面积，因此需要进行修正<br>
+                        D、因为T-t曲线在T2处的斜率就是铜板在稳态温度时T2下的冷却速率, 因此需要进行修正</p>
+
+                        <p>9、(4分) 记录上下铜板稳态温度后，还需要移去样品，用上铜板对下铜板直接加热，再让其自然冷却，这样操作的原因是
+                            <select id="choice_10">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select><br>
+                        A、为了使下铜板温度高于T2，这样自然冷却时，温度下降才会通过T2，便于后续测出T2附近的冷却速率<br>
+                        B、为了使下铜板温度高于T2，便于下一步加快其冷却的速率<br>
+                        C、为了使下铜板温度高于T2，加大上下铜板的温差，从而减少测量样品温度梯度的误差</p>
+
+                <h2>四、实验内容及数据处理</h2>
+                        <h3>1、(28分) 样品1导热系数测量</h3>
+                            <p>样品1：<select id="tank1">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select><br>
+                                A、有机玻璃<br>
+                                B、硅胶<br>
+                                C、木板</p>
+                            <p>1.1 厚度测量：</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-condensed">
+                                    <tr>
+                                        <td>\(h_B / mm\)</td>
+                                        <td><input type="text" id="table1_1"></td>
+                                        <td><input type="text" id="table1_2"></td>
+                                        <td><input type="text" id="table1_3"></td>
+                                        <td><input type="text" id="table1_4"></td>
+                                        <td><input type="text" id="table1_5"></td>
+                                        <td><input type="text" id="table1_6"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <p>厚度平均值:\(h_B = \)  <input type="text"  id="blank_1" readonly="readonly"> m.</p>
+                            <p>厚度相对标准偏差:<input type="text" id="blank_2" readonly="readonly">%</p>
+
+                            <p>1.2 直径测量：</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-condensed">
+                                    <tr>
+                                        <td>\(D_B / mm\)</td>
+                                        <td><input type="text" id="table2_1"></td>
+                                        <td><input type="text" id="table2_2"></td>
+                                        <td><input type="text" id="table2_3"></td>
+                                        <td><input type="text" id="table2_4"></td>
+                                        <td><input type="text" id="table2_5"></td>
+                                        <td><input type="text" id="table2_6"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <p>半径平均值：\(R_B = \) <input type="text" id="blank_3" readonly="readonly"> m.</p>
+                            <p>半径相对标准偏差：<input type="text" id="blank_4" readonly="readonly">%</p>
+
+                            <p>1.3 温度设定：</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-condensed">
+                                    <tr>
+                                        <td>加热盘设定温度：\(T_{1}\)</td>
+                                        <td>散热盘稳态温度：\(T_{2}\)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" id="table3_1">℃</td>
+                                        <td><input type="text" id="table3_2">℃</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <p>1.4 自然冷却数据记录表：</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-condensed">
+                                    <tr>
+                                        <td>时刻t(s)</td>
+                                        <td><input type="text" id="table4_1"></td>
+                                        <td><input type="text" id="table4_2"></td>
+                                        <td><input type="text" id="table4_3"></td>
+                                        <td><input type="text" id="table4_4"></td>
+                                        <td><input type="text" id="table4_5"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>温度T2（℃）</td>
+                                        <td><input type="text" id="table4_6"></td>
+                                        <td><input type="text" id="table4_7"></td>
+                                        <td><input type="text" id="table4_8"></td>
+                                        <td><input type="text" id="table4_9"></td>
+                                        <td><input type="text" id="table4_10"></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                <button onclick="productDataAndPicture1()" class="btn btn-primary"><span style="font-size:1.5em">生成曲线</span></button>
+
+                                <p>T-t曲线:</p>
+                                <div id="main1" class="body" style="width: 100%;height: 400px;"></div>
+
+                            <p>\(\Delta T / \Delta t =\)  <td><input style="width: auto" type="text" id="blank_5" readonly="readonly"></td> ℃/s</p>
+                            <p><span style="font-size: 20px;">拟合的线性方程：</span><input id="blank_6" style="width: auto" type="text"  readonly="readonly"></p>
+                            <p><span style="font-size: 20px;">决定系数：\(R^2 =\) </span><input id="blank_7" style="width: auto" type="text"  readonly="readonly"></p>
+
+                        <h3>2、(28分)样品2导热系数测量 </h3>
+                        <p>样品2：石英玻璃</p>
+                            <p>2.1 厚度测量：</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-condensed">
+                                    <tr>
+                                        <td>\(h_B / mm\)</td>
+                                        <td><input type="text" id="table5_1"></td>
+                                        <td><input type="text" id="table5_2"></td>
+                                        <td><input type="text" id="table5_3"></td>
+                                        <td><input type="text" id="table5_4"></td>
+                                        <td><input type="text" id="table5_5"></td>
+                                        <td><input type="text" id="table5_6"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <p>厚度平均值:\(h_B = \)  <input type="text"  id="blank_8" readonly="readonly"> m.</p>
+                            <p>厚度相对标准偏差：<input type="text" id="blank_9" readonly="readonly">%</p>
+
+                            <p>2.2 直径测量：</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-condensed">
+                                    <tr>
+                                        <td>\(D_B / mm\)</td>
+                                        <td><input type="text" id="table6_1"></td>
+                                        <td><input type="text" id="table6_2"></td>
+                                        <td><input type="text" id="table6_3"></td>
+                                        <td><input type="text" id="table6_4"></td>
+                                        <td><input type="text" id="table6_5"></td>
+                                        <td><input type="text" id="table6_6"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <p>半径平均值：\(R_B = \) <input type="text" id="blank_10" readonly="readonly"> m.</p>
+                            <p>半径相对标准偏差：<input type="text" id="blank_11" readonly="readonly">%</p>
+
+                            <p>2.3 温度设定：</p>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped table-condensed">
+                                    <tr>
+                                        <td>加热盘设定温度:\(T_{1}\)</td>
+                                        <td>散热盘稳态温度:\(T_{2}\)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" id="table7_1">℃</td>
+                                        <td><input type="text" id="table7_2">℃</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                                <p>2.4 自然冷却数据记录表：</p>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped table-condensed">
+                                        <tr>
+                                            <td>时刻t(s)</td>
+                                            <td><input type="text" id="table8_1"></td>
+                                            <td><input type="text" id="table8_2"></td>
+                                            <td><input type="text" id="table8_3"></td>
+                                            <td><input type="text" id="table8_4"></td>
+                                            <td><input type="text" id="table8_5"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>温度T2（℃）</td>
+                                            <td><input type="text" id="table8_6"></td>
+                                            <td><input type="text" id="table8_7"></td>
+                                            <td><input type="text" id="table8_8"></td>
+                                            <td><input type="text" id="table8_9"></td>
+                                            <td><input type="text" id="table8_10"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <button onclick="productDataAndPicture2()" class="btn btn-primary"><span style="font-size:1.5em">生成曲线</span></button>
+
+                                    <p>T-t曲线:</p>
+                                    <div id="main2" class="body" style="width: 100%;height: 400px;"></div>
+
+                                <p>\(\Delta T / \Delta t =\)  <td><input style="width: auto" type="text" id="blank_12" readonly="readonly"></td> ℃/s</p>
+                                <p><span style="font-size: 20px;">拟合的线性方程：</span><input id="blank_13" style="width: auto" type="text"  readonly="readonly"></p>
+                                <p><span style="font-size: 20px;">决定系数：\(R^2 =\) </span><input id="blank_14" style="width: auto" type="text"  readonly="readonly"></p>
+
+                        <h3>3、（8分）导热系数计算</h3>
+                        <p>散热盘（下铜板）相关参数：</p>
+                        <p>比热容：c=385J/(K·kg)</p>
+                        <p>半径：\(R_p\) = 0.065m;</p>
+                        <p>质量：m=0.823kg;</p>
+                        <p>厚度：\(h_p\) = 0.00801 m;</p>
+                        <p>导热系数：<span><img style="height: 60px;width: 336px" src="./assets/images/10_4.png" alt=""></span></p>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-condensed">
+                                <tr>
+                                    <td>样品</td>
+                                    <td>1：
+                                <select id="tank2">
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                        </select>
+                                        <p>A、有机玻璃；B、硅胶；C、木板</p> </td>
+
+                                    <td>2：石英玻璃</td>
+                                </tr>
+                                <tr>
+<!--                                    <td><img style="height: 22px;width: 84px" src="./assets/images/10_5.png" alt=""></td>-->
+                                    <td>导热系数(W/m/K)</td>
+                                    <td><input type="text" id="blank_15" readonly="readonly"></td>
+                                    <td><input type="text" id="blank_16" readonly="readonly"></td>
+                                </tr>
+                            </table>
+                        </div>
+    <br>
+    <button class="btn btn-primary btn-lg btn-block" onclick="submitAll()">提交</button>
+    <br>
+    <br>
+</div>
+<div id="footer-sec">
+    Copyright &copy; <a href="#">2019张文军</a>
+</div>
+
+<style>
+    input {
+        width: 80px;
+        height: 30px;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+    }
+    select {
+        width: 60px;
+        height: 25px;
+    }
+    * {
+        font-size: 20px;
+    }
+    td{
+        text-align: center
+    }
+</style>
+
+<!--自定义js-->
+<!--<script src="../assets/js/biz/ReDaoXiShuCeDing.js"></script>&lt;!&ndash;&ndash;&gt;-->
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="../assets/js/biz/ReDaoXiShuCeDing.js" ></script>
+<script src="../assets/js/ecStat.js"></script>
+<script src="../assets/js/biz/myChats/charts10.js"></script>
+
+</body>
+</html>

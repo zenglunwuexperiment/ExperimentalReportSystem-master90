@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学生主页</title>
+
+    <!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+       <!--CUSTOM BASIC STYLES-->
+    <link href="assets/css/basic.css" rel="stylesheet" />
+    <!--CUSTOM MAIN STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />-->
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">南京农业大学</a>
+            </div>
+            <div class="header-right">
+                <a href="javascript:void(0)" onclick="logout()" class="btn btn-danger" title="Logout"><b>安全退出  </b><i class="fa fa-exclamation-circle fa-2x"></i></a>
+            </div>
+        </nav>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <div class="user-img-div">
+                            <div>
+                                <h4><span id="stu_name"></span></h4>
+                                学号：<span id="stu_num"></span>
+                            <br />
+
+                                <span id="major"></span><span id="stu_class"></span>班
+                            <br/>
+                                <span id="date">2018年9月16日</span>
+
+                                <!--<br/>-->
+                                <!--<span id="id"> <a  class="btn btn-info" href="user/edit">修改个人信息</a> </span>-->
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="active-menu" href="index.html">首页</a>
+                    </li>
+                     <li>
+                        <a href="#">实验名称<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a target="_blank" href="experiment/PhotoeletricExperiment.html"><small>光电效应和普朗克常数的测定</small></a>
+                            </li>
+                             <li>
+                                 <a target="_blank" href="experiment/SolarEnergyExperiment.html"><small>太阳能实验</small></a>
+                             </li>
+                             <li>
+                                 <a target="_blank" href="experiment/GratingdiffractionExperiment.html"><small>光栅衍射及光波波长的测定</small></a>
+                             </li>
+                             <li>
+                                 <a target="_blank" href="experiment/YoungmodulusExperiment.html"><small>用拉伸法测金属杨氏模量</small></a>
+                             </li>
+                             <li>
+                                 <a target="_blank" href="experiment/InertiaExperiment.html"><small>刚体的转动惯量测定</small></a>
+                             </li>
+                             <li>
+                                 <a target="_blank" href="experiment/CollisionShooting.html"><small>碰撞打靶实验中能量损失的分析</small></a>
+                             </li>
+                             <li>
+                                 <a target="_blank" href="experiment/NewtonRing.html"><small>用牛顿环测透镜的曲率半径</small></a>
+                             </li>
+                             <li>
+                                 <a target="_blank" href="experiment/ShuZiShuBoQi.html"><small>数字示波器的使用</small></a>
+                             </li>
+                             <li>
+                                 <a target="_blank" href="experiment/LuoXianGuanCiChangFenBu.html"><small>霍尔效应法测定螺线管磁场分布</small></a>
+                             </li>
+                             <li>
+                                 <a target="_blank" href="experiment/GuangPianZhen.html"><small>光偏振实验</small></a>
+                             </li>
+                             <li>
+                                 <a target="_blank" href="experiment/ReDaoXiShuCeDing.html"><small>导热系数的测定</small></a>
+                             </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="user/edit">修改信息</a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">学生主页</h1>
+                        <h1 class="page-subhead-line">欢迎使用南京农业大学实验报告提交及管理系统</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-info">
+                            本系统是针对南京农业大学学生及教师使用的物理实验报告提交及管理系统，旨在推进实验报告的自动化计分与存档，
+                            并便利学生们填写实验报告
+                            <br>
+                            由于本系统目前是初步完成的阶段，以下须知请学生们注意：
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <!--<div class="panel-heading">-->
+                                <!--注意事项-->
+                            <!--</div>-->
+                            <div class="panel-body">
+                                <div class="alert alert-success">
+                                    实验报告只能提交一次，不可重复提交，若学生因其他原因误提交了报告，请通知实验老师。
+                                </div>
+                                <div class="alert alert-info">
+                                    如果左上角信息出现错误，可能是学生注册信息有问题，请联系实验老师进行修改。
+                                </div>
+                                <div class="alert alert-warning">
+                                    学生只有在实验通道开启的时候才可以进入实验报告的界面，实验报告的开启权限只有老师拥有。
+                                </div>
+                                <div class="alert alert-danger">
+                                    为了避免不必要的麻烦，在提交实验报告时最好先将数据进行截图，若由于网速问题实验报告提交出现了错误，请及时联系实验老师。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+
+    <div id="footer-sec">
+        Copyright &copy; <a href="#">2018 Creams & Cenjie & 张文军</a>
+    </div>
+    <!-- /. FOOTER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+       <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    <!--  用户登陆状态校验 -->
+    <script src="assets/js/biz/loginCheck.js"></script>
+    <script src="assets/js/biz/index.js"></script>
+    <script src="assets/js/biz/logout.js"></script>
+
+
+</body>
+</html>

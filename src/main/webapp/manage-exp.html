@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>实验管理</title>
+
+    <!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!--CUSTOM BASIC STYLES-->
+    <link href="assets/css/basic.css" rel="stylesheet" />
+    <!--CUSTOM MAIN STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />-->
+</head>
+<body>
+
+<div id="wrapper">
+    <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="manage.html">南京农业大学</a>
+        </div>
+        <div class="header-right">
+            <a href="javascript:void(0)" onclick="logout()" class="btn btn-danger" title="Logout"><b>安全退出  </b><i class="fa fa-exclamation-circle fa-2x"></i></a>
+        </div>
+    </nav>
+    <!-- /. NAV TOP  -->
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu">
+                <li>
+                    <div class="user-img-div">
+                        <div>
+                            <h4><span id="user_name"></span></h4>
+                            ID：<span id="user_id"></span>
+                            <br />
+                            <br/>
+                            <span id="date">2018年9月16日</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="manage.html">首页</a>
+                </li>
+                <li>
+                    <a class="active-menu" href="manage-exp.html">实验管理</a>
+                </li>
+                <!--<li>
+                    <a href="#">学生管理</a>
+                </li>-->
+                <li>
+                    <a href="#">成绩管理<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="search-student.html"><small>学生成绩查询</small></a>
+                        </li>
+                        <li>
+                            <a href="search-class.html"><small>专业/班级成绩查询</small></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="user/edit">修改信息</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- /. NAV SIDE  -->
+    <div id="page-wrapper">
+        <div id="page-inner">
+            <!-- /. ROW  -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">实验管理</div>
+
+                        <!-- Table -->
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>实验名</th>
+                                <th>上传日期</th>
+                                <th>实验状态</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="list-group-item-success">
+                                <td>1</td>
+                                <td>光电效应实验</td>
+                                <td>2018/9/19 </td>
+                                <td><a href="javascript:void(0);" onclick="getExp(this,1)" id="a1" class="btn btn-info">实验状态</a></td>
+                            </tr>
+                            <tr class="list-group-item-success">
+                                <td>2</td>
+                                <td>太阳能实验</td>
+                                <td>2018/10/5 </td>
+                                <td><a href="javascript:void(0);" onclick="getExp(this,2)"id="a2" class="btn btn-info">实验状态</a></td>
+                            </tr>
+                            <tr class="list-group-item-success">
+                                <td>3</td>
+                                <td>光栅衍射实验</td>
+                                <td>2019/2/22 </td>
+                                <td><a href="javascript:void(0);" onclick="getExp(this,3)"id="a3" class="btn btn-info">实验状态</a></td>
+                            </tr>
+                            <tr class="list-group-item-success">
+                                <td>4</td>
+                                <td>杨氏模量实验</td>
+                                <td>2019/2/22 </td>
+                                <td><a href="javascript:void(0);" onclick="getExp(this,4)"id="a4" class="btn btn-info">实验状态</a></td>
+                            </tr>
+                            <tr class="list-group-item-success">
+                                <td>5</td>
+                                <td>转动惯量实验</td>
+                                <td>2019/2/22 </td>
+                                <td><a href="javascript:void(0);" onclick="getExp(this,5)"id="a5" class="btn btn-info">实验状态</a></td>
+                            </tr>
+                            <tr class="list-group-item-success">
+                                <td>6</td>
+                                <td>碰撞打靶实验</td>
+                                <td>2019/2/22 </td>
+                                <td><a href="javascript:void(0);" onclick="getExp(this,6)"id="a6" class="btn btn-info">实验状态</a></td>
+                            </tr>
+                            <tr class="list-group-item-success">
+                                <td>7</td>
+                                <td>牛顿环实验</td>
+                                <td>2019/2/22 </td>
+                                <td><a href="javascript:void(0);" onclick="getExp(this,7)"id="a7" class="btn btn-info">实验状态</a></td>
+                            </tr>
+                            <tr class="list-group-item-success">
+                                <td>9</td>
+                                <td>数字示波器</td>
+                                <td>2019/5/26 </td>
+                                <td><a href="javascript:void(0);" onclick="getExp(this,9)"id="a9" class="btn btn-info">实验状态</a></td>
+                            </tr>
+                            <tr class="list-group-item-success">
+                                <td>11</td>
+                                <td>霍尔效应法测定螺线管磁场分布</td>
+                                <td>2019/6/1 </td>
+                                <td><a href="javascript:void(0);" onclick="getExp(this,11)"id="a11" class="btn btn-info">实验状态</a></td>
+                            </tr>
+                            <tr class="list-group-item-success">
+                                <td>8</td>
+                                <td>光偏振实验</td>
+                                <td>2019/6/1 </td>
+                                <td><a href="javascript:void(0);" onclick="getExp(this,8)"id="a8" class="btn btn-info">实验状态</a></td>
+                            </tr>
+                            <tr class="list-group-item-success">
+                                <td>10</td>
+                                <td>导热系数的测定</td>
+                                <td>2019/6/1 </td>
+                                <td><a href="javascript:void(0);" onclick="getExp(this,10)"id="a10" class="btn btn-info">实验状态</a></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- /. ROW  -->
+        </div>
+        <!-- /. PAGE INNER  -->
+    </div>
+    <!-- /. PAGE WRAPPER  -->
+</div>
+<!-- /. WRAPPER  -->
+
+<div id="footer-sec">
+    Copyright &copy; <a href="#">2018 Creams & Canjie & 张文军</a>
+</div>
+<!-- /. FOOTER  -->
+<!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+<!-- JQUERY SCRIPTS -->
+<script src="assets/js/jquery-1.10.2.js"></script>
+<!-- BOOTSTRAP SCRIPTS -->
+<script src="assets/js/bootstrap.js"></script>
+<!-- METISMENU SCRIPTS -->
+<script src="assets/js/jquery.metisMenu.js"></script>
+<!-- CUSTOM SCRIPTS -->
+<script src="assets/js/custom.js"></script>
+<!--  用户登陆状态校验 -->
+<script src="assets/js/biz/loginCheck.js"></script>
+<script src="assets/js/biz/manage.js"></script>
+<script src="assets/js/biz/manage-exp.js"></script>
+<script src="assets/js/biz/logout.js"></script>
+
+
+</body>
+</html>

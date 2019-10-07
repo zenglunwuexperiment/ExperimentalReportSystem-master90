@@ -1,0 +1,976 @@
+<span class="STYLE1" id=jnkc><script>setInterval("jnkc.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt (new Date().getDay());",1000);</script> </span>
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>数字示波器的使用</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body class="animated fadeInRightBig">
+<div class="container" role="alert" style="font-size:20pt">
+    <div style="text-align:center"><span style="font-size:35pt">提倡环保，拒绝纸质</span></div>
+    <div style="text-align:center"><span style="font-size:30pt">数字示波器的使用</span></div>
+        <h2>一、实验仪器：</h2>
+        <p>1、(3分) 以下不属于示波器的主要功能的是
+                <select id="choice_1">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+        <br>A、显示信号随时间的变化<br>B、测量信号强度 <br>C、测量信号周期<br>D、校正信号 </p>
+        <br>
+
+        <p>2、(3分) 示波器是常见的电学测量仪器之一，凡是能转化成
+        <select id="choice_2">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+    信号的电学量和非电学量都可以用示波器来观察.
+    <br>A、正弦<br>B、余弦 <br>C、电压 <br>D、以上全部 </p>
+        <br>
+
+        <h2>二、实验目的：</h2>
+                <p>3、(3分) 以下哪项不属于本实验的实验目的
+        <select id="choice_3">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+        </select><br>
+                A、了解示波器的结构和工作原理，学会正确使用示波器 <br> B、掌握用示波器观察波形、测量电压和频率 <br>
+                C、了解用示波器测量两列波的相位差 <br> D、掌握观察李萨如图形的方法 <br>
+                    E、观察示波器两通道信号的同步关系 </p>
+            <br>
+
+            <h2>三、实验原理：</h2>
+        <p>4、(3分) 为了显示Y方向的信号随时间的变化过程，必须给X轴偏转板加
+            <select id="choice_4">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+                <br> A、电压 <br>B、正弦波 <br> C、方波<br>D、锯齿波 </p>
+        <br>
+
+        <p>5、(3分) 李萨如图形的\(f_{x}=1000hz\)，\(N_x : N_y ={3:2}\)，则：\(f_y =\)
+                <select id="choice_5">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            <br/> A、2000 Hz <br>B、1500 Hz <br>C、500 Hz <br>D、666 Hz </p>
+        <br>
+
+        <p>6、(3分) 如果示波器的y通道输入的信号是三角波，x通道输入的是锯齿波，那么示波器的屏幕上出现的是
+                <select id="choice_6">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+            <br>A、正弦波<br>B、三角波 <br> C、锯齿波 <br>D、方波 </p>
+        <br>
+
+            <p>7、(3分）示波器显示的李萨如图如下所示，请问从图中可以看出x通道和y通道信号的频率比为
+                \(f_x : f_y =\)
+                <select id="choice_7">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select><br>
+                    A、1:2<br>
+                    B、2:1<br>
+                    C、1:3<br>
+                    D、3:1</p>
+                <div style="width: 80%;align-content: center"><img src="assets/images/9_1.jpeg" class="img-responsive img-thumbnail"style="max-width: 60%;"></div>
+        <br>
+
+            <p>8、(6分）下图中通道1信号的电压峰峰值是
+                <select id="choice_8">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                </select>
+                ，通道1和2两个信号相加之后的合成信号电压峰峰值是
+                <select id="choice_9">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                </select><br>
+                    A、10.0V<br>
+                    B、15.0V<br>
+                    C、20.0V<br>
+                    D、5.0V<br>
+                    E、2.5V<br>
+                    F、7.5V<br>
+                 </p>
+
+                 <div style="width: 80%;align-content: center"><img src="assets/images/9_2.jpeg" class="img-responsive img-thumbnail"style="max-width: 60%;"></div>
+                    <br>
+
+            <p>9、（6分）下图中如果通道1的相位为0，则通道2的相位为
+                <select id="choice_10">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                </select>, 合成信号的相位为
+                <select id="choice_11">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                </select>.<br>
+                A、0<br/>
+                B、\(\pi\)<br>
+                C、2\(\pi\)<br>
+                D、\(\pi\)/2<br>
+                E、3\(\pi\)/2<br>
+            </p>
+
+                <div style="width: 80%;align-content: center"><img src="assets/images/9_3.jpeg" class="img-responsive img-thumbnail"style="max-width: 60%;"></div>
+                    <br>
+
+            <p>10、（3分）下图中合成信号的周期是
+                <select id="choice_12">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>.<br>
+                A、1000us<br>
+                B、200us<br>
+                C、5us<br>
+                D、100us<br>
+            </p>
+                        <div style="width: 80%;align-content: center"><img src="assets/images/9_4.jpeg" class="img-responsive img-thumbnail"style="max-width: 60%;"></div>
+            <br>
+
+        <h2>四、实验内容及数据处理</h2>
+            <h3>１、（12分）测量正弦波形的电压、周期和频率. </h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-condensed">
+                <tr>
+                    <th rowspan="2"><div style="text-align:center">信号源</div></th>
+                    <th colspan="4"><div style="text-align:center">峰峰值\(V_p-_p\)</div></th>
+                    <th colspan="4"><div style="text-align:center">周期T</div></th>
+                    <th colspan="2"><div style="text-align:center">频率F</div></th>
+                </tr>
+                <tr>
+                    <td>垂直偏转灵敏度V/div</td>
+                    <td>垂直方向所占格数div</td>
+                    <td>电压峰峰值V/div*div</td>
+                    <td>示波器示数V</td>
+                    <td>水平扫描速度us/div</td>
+                    <td>水平方向所占格数div</td>
+                    <td>周期us/div*div</td>
+                    <td>示波器示数us</td>
+                    <td>计算值（1/T）Hz</td>
+                    <td>示波器示数Hz</td>
+                </tr>
+                <tr>
+                    <td><div style="text-align:center">15V 500 Hz</div></td>
+                    <td><input id="table_1"  type="text"></td>
+                    <td><input id="table_2"  type="text"></td>
+                    <td><input id="table_3" readonly="readonly" type="text"></td>
+                    <td><input id="table_4"  type="text"></td>
+                    <td><input id="table_5"  type="text"></td>
+                    <td><input id="table_6"  type="text"></td>
+                    <td><input id="table_7" readonly="readonly" type="text"></td>
+                    <td><input id="table_8"  type="text"></td>
+                    <td><input id="table_9" readonly="readonly" type="text"></td>
+                    <td><input id="table_10"  type="text"></td>
+                </tr>
+                <tr>
+                    <td><div style="text-align:center">10V 1kHz</div></td>
+                    <td><input id="table_11"  type="text"></td>
+                    <td><input id="table_12"  type="text"></td>
+                    <td><input id="table_13" readonly="readonly" type="text"></td>
+                    <td><input id="table_14"  type="text"></td>
+                    <td><input id="table_15"  type="text"></td>
+                    <td><input id="table_16"  type="text"></td>
+                    <td><input id="table_17" readonly="readonly" type="text"></td>
+                    <td><input id="table_18"  type="text"></td>
+                    <td><input id="table_19" readonly="readonly" type="text"></td>
+                    <td><input id="table_20"  type="text"></td>
+                </tr>
+            </table>
+    <p>电压相对误差1:<input id="blank_1" style="width: auto" type="text" readonly="readonly">%</p>
+    <p>周期相对误差1:<input id="blank_2" style="width: auto" type="text"  readonly="readonly">%</p>
+    <p>频率相对误差1:<input id="blank_3" style="width: auto" type="text"  readonly="readonly">%</p>
+    <p>电压相对误差2:<input id="blank_4" style="width: auto" type="text"  readonly="readonly">%</p>
+    <p>周期相对误差2:<input id="blank_5" style="width: auto" type="text"  readonly="readonly">%</p>
+    <p>频率相对误差2:<input id="blank_6" style="width: auto" type="text"  readonly="readonly">%</p>
+            <button onclick="productData()" class="btn btn-primary"><span style="font-size:1.5em">生成数据</span></button>
+        </div>
+    <br>
+
+        <h3>2、(26分）观察下图中不同频率比的李萨如图形(将李萨如图对应的编号填入相应的空）</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-condensed">
+                <tr>
+                    <th colspan="2"><div style="text-align:center">频率比</div></th>
+                    <th><div style="text-align:center">１：１</div></th>
+                    <th><div style="text-align:center">１：２</div></th>
+                    <th><div style="text-align:center">１：３</div></th>
+                    <th><div style="text-align:center">２：３</div></th>
+                </tr>
+                <tr>
+                    <td rowspan="2"><div style="text-align:center">频率</div></td>
+                    <td>CH1</td>
+                    <td>1000 Hz</td>
+                    <td>1000 Hz</td>
+                    <td>500 Hz</td>
+                    <td>1000 Hz</td>
+                </tr>
+                <tr>
+                    <td>CH2</td>
+                    <td>1000 Hz</td>
+                    <td>2000 Hz</td>
+                    <td>1500 Hz</td>
+                    <td>1500 Hz</td>
+                </tr>
+                <tr>
+                    <td rowspan="5"><div style="text-align:center">相位差 \(\Delta \varphi \)</div></td>
+                    <td>0</td>
+                    <td><select id="choice_13">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_14">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_15">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_16">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>\(\pi\)/4</td>
+                    <td><select id="choice_17">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_18">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_19">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_20">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>\(\pi\)/2</td>
+                    <td><select id="choice_21">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_22">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_23">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_24">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>3\(\pi\)/4</td>
+                    <td><select id="choice_25">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_26">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_27">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_28">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>\(\pi\)</td>
+                    <td><select id="choice_29">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_30">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_31">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                    <td><select id="choice_32">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                        <option value="K">K</option>
+                        <option value="L">L</option>
+                        <option value="M">M</option>
+                        <option value="N">N</option>
+                        <option value="O">O</option>
+                        <option value="P">P</option>
+                        <option value="Q">Q</option>
+                        <option value="R">R</option>
+                        <option value="S">S</option>
+                        <option value="T">T</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" colspan="2" >切点数比 \(n_x\):\(n_y\)=</td>
+                    <td>
+                            <select id="choice_33">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                </select></td>
+                <td>
+                            <select id="choice_34">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                            </select>
+                  </td>
+                    <td>
+                            <select id="choice_35">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                </select>
+                       </td>
+                    <td>
+                            <select id="choice_36">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                </select>
+                        </td>
+                </tr>
+
+                <tr>
+                    <td colspan ="4" rowspan="1">A、1:1;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B、2:1;&nbsp;&nbsp;&nbsp;&nbsp;C、3:1;&nbsp;&nbsp;&nbsp;&nbsp;D、3:2;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E、1:2;&nbsp;&nbsp;&nbsp;&nbsp;F、1:3;&nbsp;&nbsp;&nbsp;&nbsp;G、2:3</td>
+                </tr>
+
+                <tr>
+                    <td colspan="6">频率和切点数的关系为：
+                            <select id="choice_37">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+                         A、相同;&nbsp;&nbsp;B、反比;&nbsp;&nbsp;C、相反数</td>
+                </tr>
+
+                <tr>
+                    <td colspan="6">周期和切点数的关系为：
+                            <select id="choice_38">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+                        A、相同;&nbsp;&nbsp;B、反比;&nbsp;&nbsp;C、相反数</td>
+                </tr>
+            </table>
+            </div>
+
+                <div style="width: 80%;align-content: center"><img src="assets/images/9_5.png" class="img-responsive img-thumbnail" style="max-width: 60%;"></div>
+            <br>
+
+            <h3>3、(26分）信号合成波形</h3>
+            <p>同相（\(\Delta \varphi =0\)）</p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-condensed">
+                    <tr>
+                        <th></th>
+                        <th><div style="text-align:center">相 位\(\varphi\)</div></th>
+                        <th><div style="text-align:center">频率Ｈｚ</div></th>
+                        <th><div style="text-align:center">电压Ｖ</div></th>
+                        <th><div style="text-align:center">波形图</div></th>
+                    </tr>
+                    <tr>
+                        <td>CH1</td>
+                        <td>0</td>
+                        <td>1000</td>
+                        <td>5</td>
+                        <td rowspan="4">请选择下图中哪<br>个选项
+                            符合示波<br>器上显示的波形<br>
+                            <select id="choice_42">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CH2</td>
+                        <td>0</td>
+                        <td>1000</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" >合 成</td>
+                        <td>
+                         <select id="choice_39">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+                        </td>
+                        <td>
+                         <select id="choice_40">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+                        </td>
+                        <td>
+                    <select id="choice_41">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                    A、0;&nbsp;&nbsp;B、\(\pi\);&nbsp;&nbsp;C、0.5\(\pi\)
+                     </td>
+
+                        <td>
+                            A、0;&nbsp;&nbsp;B、1000;&nbsp;&nbsp;C、2000
+                    </td>
+
+                        <td>
+                           A、5;&nbsp;&nbsp;B、10;&nbsp;&nbsp;C、15
+                        </td>
+                    </tr>
+                </table>
+            </div>
+                <br>
+
+                    <div style="width: 80%;align-content: center"><img src="assets/images/9_6.png" class="img-responsive img-thumbnail" style="max-width: 60%;"></div>
+
+            <br>
+
+            <p>反相（\(\Delta \varphi =\pi\)）</p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-condensed">
+                    <tr>
+                        <th></th>
+                        <th>相 位\(\varphi\)</th>
+                        <th>频 率HZ</th>
+                        <th>电压V</th>
+                        <th>波 形 图</th>
+                    </tr>
+                    <tr>
+                        <td>CH1</td>
+                        <td>\(\pi\)</td>
+                        <td>1000</td>
+                        <td>5</td>
+                        <td rowspan="4">请选择下图中哪<br>个选项
+                            符合示波<br>器上显示的波形<br>
+                            <select id="choice_46">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CH2</td>
+                        <td>0</td>
+                        <td>1000</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" >合 成</td>
+                        <td>
+                            <select id="choice_43">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+                        </td>
+                        <td>
+                            <select id="choice_44">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+                        </td>
+                        <td>
+                           <select id="choice_45">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                    A、0;&nbsp;&nbsp;B、\(\pi\);&nbsp;&nbsp;C、0.5\(\pi\)
+                     </td>
+                        <td>
+                            A、0;&nbsp;&nbsp;B、1000;&nbsp;&nbsp;C、2000
+                    </td>
+                        <td>
+                           A、5;&nbsp;&nbsp;B、10;&nbsp;&nbsp;C、15
+                        </td>
+                    </tr>
+                </table>
+            </div>
+                <br>
+                    <div style="width: 80%;align-content: center"><img src="assets/images/9_7.png" class="img-responsive img-thumbnail"style="max-width: 60%;"></div>
+        <br>
+        <div>
+            <button onclick="submitAll()" class="btn btn-primary btn-block btn-lg">提交</button>
+        </div>
+        <br>
+    <br>
+</div>
+<div id="footer-sec">
+    Copyright &copy; <a href="#">2019 & 张文军</a>
+</div>
+
+<style>
+    input {
+        width: 80px;
+        height: 30px;
+    }
+    img{
+        height: 100%;width: 100%
+    }
+    select {
+        width: 60px;
+        height: 25px
+    }
+    *{
+        font-size: 20px;
+    }
+    td{
+        text-align: center
+    }
+</style>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<!--<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>-->
+<script src="../assets/js/jquery-1.11.1.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="../assets/js/biz/shuZiShuBoQi.js"></script>
+</body>
+</html>

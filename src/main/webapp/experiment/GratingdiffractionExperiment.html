@@ -1,0 +1,281 @@
+<span class="STYLE1" id=jnkc><script>setInterval("jnkc.innerHTML=new Date().toLocaleString()+' 星期'+'日一二三四五六'.charAt (new Date().getDay());",1000);</script> </span>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Style-Type" content="text/css"/>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <title>光栅衍射及光波波长的测定实验报告</title>
+</head>
+<body class="animated fadeInRightBig">
+<div class="container" role="alert" style="font-size:20pt">
+    <div style="text-align:center"><span style="font-size:35pt">提倡环保，拒绝纸质</span></div>
+    <div style="text-align:center"><span style="font-size:30pt">光栅衍射及光波波长的测定</span></div>
+
+        <h2>一、实验仪器：</h2>
+        <p>1、(3分) 分光计是一种
+        <select id="choice_1">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>    的光学仪器
+        <br>A、用来测量光波波长的光学仪器
+        <br>B、用来测量各种光线之间角度的光学仪器
+        <br>C、用来测量光线最小偏向角的光学仪器</p>
+
+        <p>2、(3分) 分光计设计了两个游标是为了
+        <select id="choice_2"  >
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select> <br>
+        A、消除偏心差，减少误差<br>
+        B、消除视差，使读数准确<br>
+        C、读数方便，减少误差</p>
+
+        <h2>二、实验目的：</h2>
+        <p>3、(3分) 以下哪一项不是本实验的主要实验目的
+    <select  id="choice_3">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+    </select>
+            <br> A、观察光栅衍射现象
+        <br> B、测量最小偏向角
+        <br> C、测量光波波长
+        <br> D、测量光栅常数</p>
+
+        <h2>三、实验原理：</h2>
+        <p>4、(8分) 光栅方程  \(dsin\Psi=k\lambda\)  其中，  \(d\)  表示
+        <select  id="choice_4">
+             <option value="A">A</option>
+             <option value="B">B</option>
+             <option value="C">C</option>
+             <option value="D">D</option>
+             <option value="E">E</option>
+             <option value="F">F</option>
+             <option value="G">G</option>
+        </select>，
+        \(\Psi\) 表示
+        <select  id="choice_5" >
+             <option value="A">A</option>
+             <option value="B">B</option>
+             <option value="C">C</option>
+             <option value="D">D</option>
+             <option value="E">E</option>
+             <option value="F">F</option>
+             <option value="G">G</option>
+        </select>，
+        \(k\)  表示
+        <select  id="choice_6" >
+             <option value="A">A</option>
+             <option value="B">B</option>
+             <option value="C">C</option>
+             <option value="D">D</option>
+             <option value="E">E</option>
+             <option value="F">F</option>
+             <option value="G">G</option>
+        </select>，
+        \(\lambda\)  表示
+         <select  id="choice_7" >
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+             <option value="D">D</option>
+             <option value="E">E</option>
+             <option value="F">F</option>
+             <option value="G">G</option>
+        </select>
+
+        <br>A、暗纹级次；<br> B、明纹级次； <br> C、明纹个数； <br>  D、波长；<br> E、衍射角；  <br>   F、折射角；    <br>  G、光栅常数.</p>
+
+        <p>5、(3分) 图中游标的示数是：
+        <select id="choice_8" >
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select> <br>
+            A、330°12'； <br>  B、330°42'；<br> C、337°12'； <br> D、337°42'.</p>
+        <div><img src="assets/images/3_1.jpeg"></div>
+    <br>
+        <p>6、(3分) 下图中衍射角\(\Psi_k\)计算公式为
+        <select id="choice_9">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select><br>
+        A、\(\Psi_k=\frac 12(|\theta_2-\theta_1|+|\theta_2'-\theta_1'|) \)<br>
+        B、\(\Psi_k=\frac 12(|\theta_1-\theta_1'|+|\theta_2-\theta_2'|) \)<br>
+        C、\(\Psi_k=\frac 12(|\theta_1-\theta_2'|+|\theta_2-\theta_1'|) \)</p>
+        <div><img src="assets/images/3_2.png"></div>
+    <br>
+        <p>7、(3分) \(330°02'-229°43'=\)
+        <select id="choice_10"  >
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>    <br>
+            A、\(100°59'\)；   <br>   B、\(100°19'\)；   <br> C、\(100.59°\)；   <br>   D、\(100.19°\).</p>
+
+        <p>8、(3分) 如果对某种光线的某次测量中， -2级谱线左游标的示数是336.19°，+2级谱线左游标的示数是12.19°，则此光线的二级衍射角大约为
+        <select id="choice_11">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select> <br> A、288°；<br>  B、144°；<br>   C、36°；<br>   D、18°.</p>
+
+        <p>9、(3分) 光线的波长为500nm，实验中测得此光线二级谱线的衍射角为30°，则光栅常数为
+        <select id="choice_12"  >
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select> <br>
+            A、500nm；<br> B、1000nm；<br>   C、2000nm.</p>
+
+        <p>10、(3分) 用一个光栅常数为3000nm的光栅测量光波波长，实验中测得某条光线的一级谱线的衍射角为10°（sin10°≈0.17），则此光波的波长为
+        <select id="choice_13">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select> <br>
+            A、510 nm；<br>  B、500 nm； <br>  C、490 nm.</p>
+
+    <h2>四、(65分) 实验内容及数据处理</h2>
+        <h3>1、记录各级衍射光线位置</h3>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-condensed">
+            <tr>
+                <th rowspan="2"></th>
+                <th><div style="text-align:center">绿 K=-2</div></th>
+                <th><div style="text-align:center">黄’K=-1</div></th>
+                <th><div style="text-align:center">黄 K=-1</div></th>
+                <th><div style="text-align:center">绿 K=-1</div></th>
+                <th><div style="text-align:center">绿 K=+1</div></th>
+                <th><div style="text-align:center">黄 K=+1</div></th>
+                <th><div style="text-align:center">黄’K=+1</div></th>
+                <th><div style="text-align:center">绿 K=+2</div></th>
+            </tr>
+
+            <tr>
+                <td><div style="text-align:center">D1</div></td>
+                <td><div style="text-align:center">C1</div></td>
+                <td><div style="text-align:center">B1</div></td>
+                <td><div style="text-align:center">A1</div></td>
+                <td><div style="text-align:center">A2</div></td>
+                <td><div style="text-align:center">B2</div></td>
+                <td><div style="text-align:center">C2</div></td>
+                <td><div style="text-align:center">D2</div></td>
+            </tr>
+
+            <tr>
+                <th><div style="text-align:center">左游标（度）</div></th>
+                <td><input value="" id="table_1" style="width: 100px"></td>
+                <td><input value="" id="table_2" style="width: 100px"></td>
+                <td><input value="" id="table_3" style="width: 100px"></td>
+                <td><input value="" id="table_4" style="width: 100px"></td>
+                <td><input value="" id="table_5" style="width: 100px"></td>
+                <td><input value="" id="table_6" style="width: 100px"></td>
+                <td><input value="" id="table_7" style="width: 100px"></td>
+                <td><input value="" id="table_8" style="width: 100px"></td>
+            </tr>
+
+            <tr>
+                <th><div style="text-align:center">左游标（分）</div></th>
+                <td><input value="" id="table_9" style="width: 100px"></td>
+                <td><input value="" id="table_10" style="width: 100px"></td>
+                <td><input value="" id="table_11" style="width: 100px"></td>
+                <td><input value="" id="table_12" style="width: 100px"></td>
+                <td><input value="" id="table_13" style="width: 100px"></td>
+                <td><input value="" id="table_14" style="width: 100px"></td>
+                <td><input value="" id="table_15" style="width: 100px"></td>
+                <td><input value="" id="table_16" style="width: 100px"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><div style="text-align:center">D3</div></td>
+                <td><div style="text-align:center">C3</div></td>
+                <td><div style="text-align:center">B3</div></td>
+                <td><div style="text-align:center">A3</div></td>
+                <td><div style="text-align:center">A4</div></td>
+                <td><div style="text-align:center">B4</div></td>
+                <td><div style="text-align:center">V4</div></td>
+                <td><div style="text-align:center">D4</div></td>
+            </tr>
+
+            <tr>
+                <th><div style="text-align:center">右游标（度）</div></th>
+                <td><input value="" id="table_17" style="width: 100px"></td>
+                <td><input value="" id="table_18" style="width: 100px"></td>
+                <td><input value="" id="table_19" style="width: 100px"></td>
+                <td><input value="" id="table_20" style="width: 100px"></td>
+                <td><input value="" id="table_21" style="width: 100px"></td>
+                <td><input value="" id="table_22" style="width: 100px"></td>
+                <td><input value="" id="table_23" style="width: 100px"></td>
+                <td><input value="" id="table_24" style="width: 100px"></td>
+            </tr>
+
+            <tr>
+                <th><div style="text-align:center">右游标（分）</div></th>
+                <td><input value="" id="table_25" style="width: 100px"></td>
+                <td><input value="" id="table_26" style="width: 100px"></td>
+                <td><input value="" id="table_27" style="width: 100px"></td>
+                <td><input value="" id="table_28" style="width: 100px"></td>
+                <td><input value="" id="table_29" style="width: 100px"></td>
+                <td><input value="" id="table_30" style="width: 100px"></td>
+                <td><input value="" id="table_31" style="width: 100px"></td>
+                <td><input value="" id="table_32" style="width: 100px"></td>
+            </tr>
+        </table>
+</div>
+
+        <br>
+        <button onclick="autoGenera1()"style="width:200px; height: 75px;"><span style="font-size:1.0em">生成数据2</span></button>
+        <br>
+        <br>
+        <button onclick="autoGenera2()"style="width:200px; height: 75px;"><span style="font-size:1.0em">生成数据3和4</span></button>
+        <br>
+        <h3>2、求衍射角</h3>
+        <p><span style="font-size: 20px;">\(\Psi_{绿1}=\frac 14(|A_1-A_2|+|A_3-A_4|)\)=</span><input id="blank_1" style="width: auto" type="text"  readonly="readonly"></p>
+        <p><span style="font-size: 20px;">\(\Psi_{绿2}=\frac 14(|D_1-D_2|+|D_3-D_4|)\)=</span><input id="blank_2" style="width: auto" type="text"  readonly="readonly"></p>
+        <p><span style="font-size: 20px;">\(\Psi_{黄1}=\frac 14(|B_1-B_2|+|B_3-B_4|)\)=</span><input id="blank_3" style="width: auto" type="text"  readonly="readonly"></p>
+        <p><span style="font-size: 20px;">\(\Psi_{黄'1}=\frac 14(|C_1-C_2|+|C_3-C_4|)\)=</span><input id="blank_4" style="width: auto" type="text"  readonly="readonly"></p>
+
+        <h3>3、计算光栅常数d</h3>
+        <p><span style="font-size: 20px;">已知绿光波长\(\lambda_绿=\)546.1nm </span></p>
+        <p><span style="font-size: 20px;">\(d_{绿1}=\frac {1×\lambda_绿}{sin\Psi绿_1}=\)</span><input id="blank_5" style="width: auto" type="text"  readonly="readonly"><span>nm</span></p>
+        <p><span style="font-size: 20px;">\(d_{绿2}=\frac {2×\lambda_绿}{sin\Psi绿_2}=\)</span><input id="blank_6" style="width: auto" type="text"  readonly="readonly"><span>nm</span></p>
+        <p><span style="font-size: 20px;">\(d=\frac {d_{绿1}+d_{绿2}}2=\)</span><input id="blank_7" style="width: auto" type="text"  readonly="readonly"><span>nm</span></p>
+        <p><span style="font-size: 20px;">相对误差（%） \(E=\frac {|d-3333|}{3333}×100=\)</span><input id="blank_8" style="width: auto" type="text"  readonly="readonly"></p>
+
+        <p><span style="font-size: 20px;">4.计算黄光波长\(\lambda_{黄1}\), \(\lambda_{黄'1}\)</span></p>
+        <p><span style="font-size: 20px;">\(\lambda_{黄1}=\frac {dsin\Psi_k}{k}=\frac {dsin\Psi_{黄1}}{1}=\)</span><input id="blank_9" style="width: auto" type="text"  readonly="readonly"><span>nm</span></p>
+        <p><span style="font-size: 20px;">相对误差（%）\(E=\frac {|\lambda_{黄1}-577|}{577}×100=\)</span><input id="blank_10" style="width: auto" type="text"  readonly="readonly">
+        <p><span style="font-size: 20px;">\(\lambda_{黄'1}=\frac {dsin\Psi_k}{k}=\frac {dsin\Psi_{黄'1}}{1}=\)</span><input id="blank_11" style="width: auto" type="text"  readonly="readonly"><span>nm</span></p>
+        <p><span style="font-size: 20px;">相对误差（%）\(E=\frac {|\lambda_{黄'1}-579.1|}{579.1}×100=\)</span><input id="blank_12" style="width: auto" type="text"  readonly="readonly">
+
+    <br>
+    <br>
+    <button onclick="submitAll()"  class="btn btn-primary btn-block btn-lg">提交</button>
+    <br>
+    <br>
+    <br>
+</div>
+</body>
+<script src="../assets/js/jquery-1.11.1.min.js"></script>
+<script src="../assets/js/biz/Gratingdiffraction.js" ></script>
+</html>

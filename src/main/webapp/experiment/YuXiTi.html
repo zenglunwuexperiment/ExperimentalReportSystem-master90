@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>预习题</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="../assets/js/biz/myChats/echarts.js"></script>
+</head>
+<body class="animated fadeInRightBig container">
+<div>
+    <div style="text-align:center">
+        <span style="font-size:30pt">预习题</span>
+        <br>
+        <br>
+        <span style="font-size:20pt">太阳能电池基本特性测定</span>
+        <br>
+        <br>
+    </div>
+    <div>
+        <!-- -->
+        <p><span style="font-size: 20px;">1、(5分)本实验使用的实验仪器和器材有
+        <select id="choice_1" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select></span>
+        </p>
+        <p><span style="font-size: 20px;">A、太阳能电池板、电容表、示波器</span></p>
+        <p><span style="font-size: 20px;">B、太阳能电池板、电感表、白炽灯</span></p>
+        <p><span style="font-size: 20px;">C、太阳能电池板、电压表、白炽灯</span></p>
+        <p><span style="font-size: 20px;">D、太阳能电池板、示波器、白炽灯</span></p>
+    </div>
+    <br>
+    <div>
+        <!-- -->
+        <p><span style="font-size: 20px;">  2、(5分)有光照时，测量太阳能电池在不同
+        <select id="choice_2" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+       下,电压与电流变化关系,画出\(U-I\)曲线. </span></p>
+        <p><span style="font-size: 20px;">A、电池</span></p>
+        <p><span style="font-size: 20px;">B、负载电阻</span></p>
+        <p><span style="font-size: 20px;">C、二极管</span></p>
+        <p><span style="font-size: 20px;">D、填充因子</span></p>
+        <br>
+        <p><span style="font-size: 20px;"> 3、(5分)测量太阳能电池的短路电流,开路电压,最大输出功率及
+        <select id="choice_3" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+        </span></p>
+        <p><span style="font-size: 20px;">A、太阳能电池</span></p>
+        <p><span style="font-size: 20px;">B、负载电阻</span></p>
+        <p><span style="font-size: 20px;">C、电压</span></p>
+        <p><span style="font-size: 20px;">D、填充因子</span></p>
+        <!-- -->
+    </div>
+    <br>
+    <div>
+        <p><span style="font-size: 20px;"> 4、(5分)P型半导体中主要是
+        <select id="choice_4" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+        </span></p>
+        <p><span style="font-size: 20px;">A、空穴-电子对</span></p>
+        <p><span style="font-size: 20px;">B、空穴</span></p>
+        <p><span style="font-size: 20px;">C、自由电子</span></p>
+        <p><span style="font-size: 20px;">D、P-N结</span></p>
+        <br>
+        <p><span style="font-size: 20px;"> 5、(5分)N型半导体中有相当数量的
+        <select id="choice_5" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+        </span></p>
+        <p><span style="font-size: 20px;">A、空穴-电子对</span></p>
+        <p><span style="font-size: 20px;">B、空穴</span></p>
+        <p><span style="font-size: 20px;">C、自由电子</span></p>
+        <p><span style="font-size: 20px;">D、P-N结</span></p>
+        <br>
+
+        <p><span style="font-size: 20px;"> 6、(5分)当P型半导体和N型半导体结合在一起形成P-N结时，N区的
+        <select id="choice_6" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+        向P区扩散.
+        </span></p>
+        <p><span style="font-size: 20px;">A、空穴-电子对</span></p>
+        <p><span style="font-size: 20px;">B、电子-空穴对</span></p>
+        <p><span style="font-size: 20px;">C、空穴</span></p>
+        <p><span style="font-size: 20px;">D、电子</span></p>
+        <br>
+
+        <p><span style="font-size: 20px;"> 7、(5分)光照射在半导体P-N结上，形成新的空穴-电子对，在P-N结电场的作用下，
+        <select id="choice_7" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+        由N区流向P区.
+        </span></p>
+        <p><span style="font-size: 20px;">A、空穴-电子对</span></p>
+        <p><span style="font-size: 20px;">B、电子-空穴对</span></p>
+        <p><span style="font-size: 20px;">C、空穴</span></p>
+        <p><span style="font-size: 20px;">D、电子</span></p>
+        <br>
+        <p><span style="font-size: 20px;"> 8、(5分)光照射在半导体P-N结上，形成新的空穴-电子对，在P-N结电场的作用下，
+        <select id="choice_8" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+        由P区流向N区.
+        </span></p>
+        <p><span style="font-size: 20px;">A、空穴-电子对</span></p>
+        <p><span style="font-size: 20px;">B、电子-空穴对</span></p>
+        <p><span style="font-size: 20px;">C、空穴</span></p>
+        <p><span style="font-size: 20px;">D、电子</span></p>
+        <br>
+        <p><span style="font-size: 20px;"> 9、(5分)负载电阻为
+        <select id="choice_9" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+        时的电流称为短路电流.
+        </span></p>
+        <p><span style="font-size: 20px;">A、无穷大</span></p>
+        <p><span style="font-size: 20px;">B、非线性</span></p>
+        <p><span style="font-size: 20px;">C、线性</span></p>
+        <p><span style="font-size: 20px;">D、零</span></p>
+        <br>
+        <p><span style="font-size: 20px;">10、(5分)下面说法错误的是
+        <select id="choice_10" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select></span></p>
+        <p><span style="font-size: 20px;">A、填充因子与太阳能电池材料，负载电阻的串并联，光的波长，光的强度有关.</span></p>
+        <p><span style="font-size: 20px;">B、填充因子与太阳能电池材料，负载电阻的串并联，光的波长，温度有关.</span></p>
+        <p><span style="font-size: 20px;">C、填充因子与太阳能电池材料，负载电阻的串并联，光的波长，材料的硬度有关.</span></p>
+        <p><span style="font-size: 20px;">D、填充因子与太阳能电池材料，负载电阻的串并联，光的波长，短路电流有关.</span></p>
+        <br>
+        <p><span style="font-size: 20px;">11、(5分)根据下图，短路电流和开路电压乘积\((I_{SC}*U_{OC})\)的几何意义是
+        <select id="choice_11" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select></span></p>
+        <p><span style="font-size: 20px;">A、图中大矩形的面积.</span></p>
+        <p><span style="font-size: 20px;">B、图中小矩形的面积.</span></p>
+        <p><span style="font-size: 20px;">C、图中大矩形的面积与小矩形的面积之差.</span></p>
+        <p><span style="font-size: 20px;">D、图中实线围成的面积.</span></p>
+        <br>
+        <p><span style="font-size: 20px;">12、(5分)填充因子是描述太阳能电池性能优劣的一个重要参数，根据下图
+        <select id="choice_12" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select></span></p>
+        <p><span style="font-size: 20px;">A、填充因子\(FF\)=\(P_{max}/(I_{SC}*U_{OC})\) 的物理意义是图中小矩形的面积与大矩形的面积之比.</span></p>
+        <p><span style="font-size: 20px;">B、填充因子\(FF\)=\(P_{max}/(I_{SC}*U_{OC})\) 的物理意义是实际最大功率与理想最大功率之比.</span></p>
+        <p><span style="font-size: 20px;">C、填充因子与短路电流和开路电压无关.</span></p>
+        <p><span style="font-size: 20px;">D、填充因子与串联电阻和并联电阻无关.</span></p>
+        <br>
+        <div style="width: 80%;align-content: center"><img src="assets/images/12_1.png" class="img-responsive img-thumbnail"style="max-width: 60%;"></div>
+        <br>
+        <br>
+        <p><span style="font-size: 20px;">13、(5分)下列说法正确的是
+        <select id="choice_13" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select></span></p>
+        <p><span style="font-size: 20px;">A、太阳能电池的短路电流与太阳能电池的面积无关.</span></p>
+        <p><span style="font-size: 20px;">B、太阳能电池的短路电流与光强无关.</span></p>
+        <p><span style="font-size: 20px;">C、太阳能电池的短路电流与温度无关.</span></p>
+        <p><span style="font-size: 20px;">D、太阳能电池的短路电流与辐照度有关.</span></p>
+        <br>
+        <p><span style="font-size: 20px;">14、(5分)下列说法正确的是
+        <select id="choice_14" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select></span></p>
+        <p><span style="font-size: 20px;">A、太阳能电池的开路电压与材料特性无关.</span></p>
+        <p><span style="font-size: 20px;">B、太阳能电池的开路电压与光强无关.</span></p>
+        <p><span style="font-size: 20px;">C、太阳能电池的开路电压与温度无关.</span></p>
+        <p><span style="font-size: 20px;">D、太阳能电池的开路电压与电池面积大小无关.</span></p>
+        <br>
+        <p><span style="font-size: 20px;">15、(5分)下列说法不正确的是
+        <select id="choice_15" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select></span></p>
+        <p><span style="font-size: 20px;">A、短路电流对温度变化不敏感.</span></p>
+        <p><span style="font-size: 20px;">B、开路电压随温度变化显著变化.</span></p>
+        <p><span style="font-size: 20px;">C、填充因子随温度变化显著变化.</span></p>
+        <p><span style="font-size: 20px;">D、输出功率和效率随温度升高而升高.</span></p>
+        <br>
+        <p><span style="font-size: 20px;">16、(5分)下列说法正确的是
+        <select id="choice_16" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select></span></p>
+        <p><span style="font-size: 20px;">A、短路电流随光强增大而减少，开路电压随光强增大而减少.</span></p>
+        <p><span style="font-size: 20px;">B、短路电流随光强增大而增加，开路电压随光强增大而减少.</span></p>
+        <p><span style="font-size: 20px;">C、短路电流随光强增大而减少，开路电压随光强增大而增加.</span></p>
+        <p><span style="font-size: 20px;">D、短路电流随光强增大而增加，开路电压随光强增大而增加.</span></p>
+        <br>
+        <p><span style="font-size: 20px;">17、(5分)下列说法正确的是
+        <select id="choice_17" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select></span></p>
+        <p><span style="font-size: 20px;">A、短路电流与光强成正比，开路电压与光强反相关.</span></p>
+        <p><span style="font-size: 20px;">B、短路电流与光强成反比，开路电压与光强正相关.</span></p>
+        <p><span style="font-size: 20px;">C、短路电流与光强成正比，开路电压与光强正相关.</span></p>
+        <p><span style="font-size: 20px;">D、短路电流与光强成反比，开路电压与光强反相关.</span></p>
+        <br>
+        <p><span style="font-size: 20px;">18、(5分)已知太阳能电池的最大输出功率为20.0mW，短路电流5.0mA，开路电压5.0V，则填充因子为
+        <select id="choice_18" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select></span></p>
+        <p><span style="font-size: 20px;">A、0.80</span></p>
+        <p><span style="font-size: 20px;">B、1.25</span></p>
+        <p><span style="font-size: 20px;">C、20.0</span></p>
+        <p><span style="font-size: 20px;">D、0.40</span></p>
+        <br>
+        <p><span style="font-size: 20px;"> 19、(5分)当P型半导体和N型半导体结合在一起形成P-N结时，P区的
+        <select id="choice_19" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+        向N区扩散.
+        </span></p>
+        <p><span style="font-size: 20px;">A、空穴-电子对</span></p>
+        <p><span style="font-size: 20px;">B、电子-空穴对</span></p>
+        <p><span style="font-size: 20px;">C、空穴</span></p>
+        <p><span style="font-size: 20px;">D、电子</span></p>
+        <br>
+        <p><span style="font-size: 20px;">20、(5分)下列说法不正确的是
+        <select id="choice_20" style="width: 60px;height: 25px">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select></span></p>
+        <p><span style="font-size: 20px;">A、PN结是由一个N型掺杂区和一个P型掺杂区紧密接触所构成的，PN结的内电场方向由N区指向P区.</span></p>
+        <p><span style="font-size: 20px;">B、PN结是由一个N型掺杂区和一个P型掺杂区紧密接触所构成的，PN结的内电场方向由P区指向N区.</span></p>
+        <p><span style="font-size: 20px;">C、如果电源的正极接P区，负极接N区，PN结处于正向偏置.</span></p>
+        <p><span style="font-size: 20px;">D、如果电源的正极接N区，负极接P区，PN结处于反向偏置.</span></p>
+        <br>
+    </div>
+    <br>
+    <button onclick="submitAll()" class="btn btn-primary btn-block btn-lg">提交</button>
+    <br>
+    <br>
+</div>
+
+<div id="footer-sec">
+    Copyright &copy; <a href="#">2019 & NJAUZ
+</a>
+</div>
+<style>
+    input {
+        width: 80px;
+        height: 30px;
+    }
+    img{
+        height: 100%;width: 100%
+    }
+    select {
+        width: 60px;
+        height: 25px
+    }
+    *{
+        font-size: 20px;
+    }
+    td{
+        text-align: center
+    }
+</style>
+
+</div>
+
+<script src="../assets/js/jquery-1.11.1.min.js"></script>
+<script src="../assets/js/Chart.js" ></script>
+</body>
+</html>
